@@ -1,0 +1,1 @@
+# event-hubs-schema-example
