@@ -1,0 +1,15 @@
+{
+    "Logging": {
+        "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+        }
+    },
+    "Settings": {
+        "EventHubsConnectionString": "[EventHubsConnectionString]",
+        "EventHubName": "[EventHubName]",
+        "SchemaRegistryEndpoint": "[FQDNOfEventHubs]",
+        "SchemaGroup": "[SchemaRegistryGroupName]",
+        "SchemaIdToTargetInGroup": "[GuidOfSchemaInRegistry]"
+    }
+}
