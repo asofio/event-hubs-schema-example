@@ -1,0 +1,11 @@
+{
+  "namespace": "Microsoft.Azure.Data.SchemaRegistry.example",
+  "type": "record",
+  "name": "BadOrder",
+  "fields": [
+    {
+      "name": "foo",
+      "type": "string"
+    }
+  ]
+}
