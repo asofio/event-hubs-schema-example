@@ -51,8 +51,7 @@ namespace eh_schema_test
         public async static Task SendEventWithGenericRecord() {
 
             // Get the Order schema from the Event Hubs Schema Registry.
-            var schemaRegistryClient = new SchemaRegistryClient(_settings.SchemaRegistryEndpoint, new DefaultAzureCredential());
-            var response = schemaRegistryClient.GetSchema(_settings.SchemaIdToTargetInGroup);
+            var response = _schemaRegistryClient.GetSchema(_settings.SchemaIdToTargetInGroup);
 
             // Create a GenericRecord using the schema and populate fields within the schema.
             var schema = (RecordSchema)Avro.Schema.Parse(response.Value.Definition);
